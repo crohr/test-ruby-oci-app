@@ -1,0 +1,6 @@
+targets:
+  centos-6:
+env:
+  - "HELLO=world"
+before:
+  - 'echo "HELLO: $HELLO"'
