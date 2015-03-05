@@ -4,11 +4,7 @@ echo "Installing Oracle InstantClient Basic/SDK/SQLPlus..."
 mkdir -p /tmp/oracle
 cd /tmp/oracle
 
-files=(
-	instantclient-basic-linux.x64-12.1.0.2.0.zip
-	instantclient-sdk-linux.x64-12.1.0.2.0.zip
-	instantclient-sqlplus-linux.x64-12.1.0.2.0.zip
-)
+files="instantclient-basic-linux.x64-12.1.0.2.0.zip instantclient-sdk-linux.x64-12.1.0.2.0.zip instantclient-sqlplus-linux.x64-12.1.0.2.0.zip"
 for file in $files ; do
 	wget -q "https://s3.amazonaws.com/pkgr-public/$file"
 	unzip $file
