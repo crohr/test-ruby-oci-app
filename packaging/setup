@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-echo "Installing Oracle InstantClient Basic/SDL/SQLPlus..."
+echo "Installing Oracle InstantClient Basic/SDK/SQLPlus..."
 mkdir -p /tmp/oracle
 cd /tmp/oracle
 wget -q "https://s3.amazonaws.com/pkgr-public/instantclient-basic-linux.x64-12.1.0.2.0.zip"
