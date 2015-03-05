@@ -1,6 +1,5 @@
 targets:
   centos-6:
 env:
-  - "HELLO=world"
-before:
-  - 'echo "HELLO: $HELLO"'
+  - "LD_LIBRARY_PATH=/tmp/oracle/instantclient_12_1:$LD_LIBRARY_PATH"
+before_precompile: packaging/setup
